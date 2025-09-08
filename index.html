@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Pages with JavaScript</h1>
+  </header>
+
+  <!-- Dark Mode Toggle -->
+  <section id="darkModeToggle">
+    <button id="toggleThemeBtn">Switch to Dark Mode</button>
+  </section>
+
+  <!-- Counter Game -->
+  <section id="counterGame">
+    <h2>Counter Game</h2>
+    <button id="decreaseBtn">-</button>
+    <span id="counterValue">0</span>
+    <button id="increaseBtn">+</button>
+  </section>
+
+  <!-- Form Validation -->
+  <section id="formSection">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- Collapsible FAQ Section -->
+  <section id="faqSection">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is event-driven programming?</button>
+      <div class="faq-answer">It is a programming paradigm where the flow is determined by events such as user actions or messages.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why use JavaScript for web interactivity?</button>
+      <div class="faq-answer">JavaScript runs in the browser and can dynamically manipulate HTML elements for enhanced user experiences.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What are DOM elements?</button>
+      <div class="faq-answer">DOM elements represent parts of the HTML page, which JavaScript can access and modify dynamically.</div>
+    </div>
+  </section>
+
+  <!-- Dropdown Menu -->
+  <section id="dropdownMenuSection">
+    <h2>Choose Your Favorite Tech Theme</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Select a Theme ▼</button>
+      <ul id="dropdownList" class="dropdown-list hidden">
+        <li class="dropdown-item">JavaScript Galaxy</li>
+        <li class="dropdown-item">CSS Universe</li>
+        <li class="dropdown-item">HTML Planet</li>
+      </ul>
+    </div>
+    <p id="selectedOption">Selected: None</p>
+  </section>
+
+  <!-- Tabbed Interface -->
+  <section id="tabsSection">
+    <h2>Explore Tech Tabs</h2>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="tab1">JavaScript</button>
+      <button class="tab-button" data-tab="tab2">CSS</button>
+      <button class="tab-button" data-tab="tab3">HTML</button>
+    </div>
+    <div class="tab-content active" id="tab1">
+      <p>JavaScript is the scripting language that enables interactive web pages.</p>
+      <ul>
+        <li>Dynamically update content</li>
+        <li>Handle user input events</li>
+        <li>Create games and apps</li>
+      </ul>
+    </div>
+    <div class="tab-content" id="tab2">
+      <p>CSS controls the visual style and layout of web pages.</p>
+      <ul>
+        <li>Apply colors, fonts, and spacing</li>
+        <li>Create animations and transitions</li>
+        <li>Design responsive layouts</li>
+      </ul>
+    </div>
+    <div class="tab-content" id="tab3">
+      <p>HTML forms the structure and content of web pages.</p>
+      <ul>
+        <li>Defines headings, paragraphs, and links</li>
+        <li>Embeds images, audio and video</li>
+        <li>Connects with CSS and JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
